@@ -1,0 +1,116 @@
+﻿@model GameON.ViewModels.GameInTermFormViewModel
+@{
+    ViewBag.Title = "GameInTermForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Styles.Render("~/Content/css")
+
+<h2>Edit Event</h2>
+@using (Html.BeginForm("Save", "GamesInTerms", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <hr />
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Game.Name, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(m => m.GameInTerm.GameId, new SelectList(Model.Games, "Id", "Name"), "Select Game", new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Term.StartTime, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.GameInTerm.Term.StartTime, "{0:dd MMM yyyy HH:mm}", new { @class = "form-control datetimepicker1" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Term.EndTime, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.GameInTerm.Term.EndTime, "{0:dd MMM yyyy HH:mm}", new { @class = "form-control datetimepicker2" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Term.Deadline, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.GameInTerm.Term.Deadline, "{0:dd MMM yyyy HH:mm}", new { @class = "form-control datetimepicker3" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Term.Taken, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.CheckBoxFor(m => m.GameInTerm.Term.Taken)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Term.MinPeople, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.GameInTerm.Term.MinPeople, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Term.MaxPeople, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.GameInTerm.Term.MaxPeople, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Term.Price, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.GameInTerm.Term.Price, new { @class = "form-control" })
+        </div>        
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Term.City, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.GameInTerm.Term.City, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Term.Address, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.GameInTerm.Term.Address, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Term.Place, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.GameInTerm.Term.Place, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Term.ZIPCode, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.GameInTerm.Term.ZIPCode, new { @class = "form-control" })
+        </div>
+    </div>
+    @Html.HiddenFor(m => m.GameInTerm.Id)
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-primary">Save</button>
+}
+
+@Scripts.Render("~/bundles/moment")
+@Scripts.Render("~/bundles/lib")
+@Scripts.Render("~/bundles/jqueryval")
+
+@section Scripts {
+    <script>
+            $(document).ready(function () {
+                $('.datetimepicker1').datetimepicker({
+                    format: "DD MMM YYYY HH:mm"
+                });
+                $('.datetimepicker2').datetimepicker({
+                    format: "DD MMM YYYY HH:mm",
+                });
+                $('.datetimepicker3').datetimepicker({
+                    format: "DD MMM YYYY HH:mm",
+                });
+                $(".datetimepicker1").on("dp.change", function (e) {
+                    $('.datetimepicker2').data("DateTimePicker").minDate(e.date);
+                    $('.datetimepicker3').data("DateTimePicker").maxDate(e.date);
+                });
+                $(".datetimepicker2").on("dp.change", function (e) {
+                    $('.datetimepicker1').data("DateTimePicker").maxDate(e.date);
+                });
+            });
+    </script>
+}

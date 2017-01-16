@@ -1,0 +1,23 @@
+﻿@model IEnumerable<GameON.Models.Player>
+    @{
+        ViewBag.Title = "Players";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    <h2>Current Players</h2>
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>UserName</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var player in Model)
+            {
+                <tr>
+                    <td>@player.User.UserName</td>
+                </tr>
+            }
+        </tbody>
+    </table>

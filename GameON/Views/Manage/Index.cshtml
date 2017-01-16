@@ -1,0 +1,267 @@
+﻿@model GameON.Models.IndexViewModel
+@{
+    ViewBag.Title = "Manage";
+}
+
+
+<h2>@ViewBag.Title.</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>Change your account settings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Password:</dt>
+        <dd>
+            [
+            @if (Model.HasPassword)
+            {
+                @Html.ActionLink("Change your password", "ChangePassword")
+            }
+            else
+            {
+                @Html.ActionLink("Create", "SetPassword")
+            }
+            ]
+        </dd>
+        <dt>External Logins:</dt>
+        <dd>
+            @Model.Logins.Count [
+            @Html.ActionLink("Manage", "ManageLogins") ]
+        </dd>
+        @*
+            Phone Numbers can used as a second factor of verification in a two-factor authentication system.
+             
+             See <a href="http://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
+                for details on setting up this ASP.NET application to support two-factor authentication using SMS.
+             
+             Uncomment the following block after you have set up two-factor authentication
+        *@
+          
+        <dt>Phone Number:</dt>
+        <dd>
+            @(Model.PhoneNumber ?? "None") [
+            @if (Model.PhoneNumber != null)
+            {
+                @Html.ActionLink("Change", "AddPhoneNumber")
+                @: &nbsp;|&nbsp;
+                @Html.ActionLink("Remove", "RemovePhoneNumber")
+            }
+            else
+            {
+                @Html.ActionLink("Add", "AddPhoneNumber")
+            }
+            ]
+        </dd>
+        @*<dt>Two-Factor Authentication:</dt>
+        <dd>
+            @if (Model.TwoFactor)
+            {
+                using (Html.BeginForm("DisableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <text>Enabled
+                        <input type="submit" value="Disable" class="btn btn-link" />
+                    </text>
+                }
+            }
+            else
+            {
+                using (Html.BeginForm("EnableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <text>Disabled
+                        <input type="submit" value="Enable" class="btn btn-link" />
+                    </text>
+                }
+            }
+        </dd>*@
+
+    </dl>
+</div>
+
+<hr />
+<h4>Confirm your events</h4>
+<hr />
+<ul style="list-style-type:square">
+    @foreach (var gameInTerm in Model.gamesInTermsCreated)
+    {
+        if (gameInTerm.Pending == true && gameInTerm.Term.Deadline > DateTime.Now)
+        {
+            <li>@gameInTerm.Game.Name (@Html.ActionLink("Game Details", "Details", "GamesInTerms", new { id = gameInTerm.Id }, null)) @Html.ActionLink("Confirm", "Confirm", "Manage", new { id = gameInTerm.Id }, null) @Html.ActionLink("Cancel", "Cancel", "Manage", new { id = gameInTerm.Id }, null)</li>
+        }
+
+    }
+</ul>
+
+<hr />
+<h4>Invites</h4>
+<hr />
+
+<ul style="list-style-type:square">
+    @foreach (var invite in Model.Invites.Where(k => k.Pending == true))
+    {
+        <li>Sent by @invite.UserSend.UserName (@Html.ActionLink("Game Details", "Details", "GamesInTerms", new { id = invite.GameInTermId }, null)) @Html.ActionLink("Accept", "Accept", "Manage", new { id = invite.Id }, null)  @Html.ActionLink("Reject", "Reject", "Manage", new { id = invite.Id }, null)</li>
+    }
+</ul>
+
+
+<hr />
+<h4>Events you created</h4>
+<hr />
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Game</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Deadline</th>
+            <th>Taken</th>
+            <th>Available Spots</th>
+            <th>Show Players</th>
+            <th>Join/Leave</th>
+            <th>Invite</th> 
+            <th>Status</th>
+            <th>Delete</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var gameInTerm in Model.gamesInTermsCreated)
+        {
+            <tr title="Edit your event" onclick="location.href = '@Url.Action("Edit", "GamesInTerms", new { id = gameInTerm.Id })'">
+
+                <td>@gameInTerm.Game.Name</td>
+                <td>@gameInTerm.Term.StartTime.ToString("dd MMM yyyy HH:mm")</td>
+                <td>@gameInTerm.Term.EndTime.ToString("dd MMM yyyy HH:mm")</td>
+                <td>@gameInTerm.Term.Deadline.ToString("dd MMM yyyy HH:mm")</td>
+                @if (gameInTerm.Term.Taken == false)
+                {
+                    <td><input type="checkbox" class="check-box" disabled="disabled"></td>
+                }
+                else
+                {
+                    <td><input type="checkbox" class="check-box" disabled="disabled" checked></td>
+                }
+                <td>@(gameInTerm.Term.MaxPeople - Model.players.Where(c => c.GameInTermId == gameInTerm.Id).Count())</td>
+                <td>@Html.ActionLink("Current Players", "ShowPlayers", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+                @if (Model.players.Any(k => k.GameInTermId == gameInTerm.Id && k.UserId == Model.CurrentUser))
+                {
+                    <td>@Html.ActionLink("Leave", "JoinLeave", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+
+                }
+                else
+                {
+                    if (gameInTerm.Term.Taken == false)
+                    {
+                        <td>@Html.ActionLink("Join", "JoinLeave", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+                    }
+                    else
+                    {
+                        <td>Taken</td>
+                    }
+
+                }
+                @if (gameInTerm.Term.Taken == false)
+                {
+                    <td>@Html.ActionLink("Invite", "Invite", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+                }
+                else
+                {
+                    <td>Taken</td>
+                }
+                @if (gameInTerm.Canceled == true)
+                    {<td>Canceled</td>}
+                else if (gameInTerm.Confirmed == true)
+                    {<td> Confirmed </td>}
+                else
+                    {<td>Pending</td>}
+                <td>@Html.ActionLink("Delete", "Delete", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+            </tr>
+
+        }
+
+</tbody>
+</table>
+
+
+<hr />
+<h4>Events you joined</h4>
+<hr />
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Game</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Deadline</th>
+            <th>Taken</th>
+            <th>Available Spots</th>
+            <th>Show Players</th>
+            <th>Join/Leave</th>
+            <th>Invite</th> 
+            <th>Status</th>
+
+        </tr>
+    </thead>
+<tbody>
+        @foreach (var gameInTerm in Model.gamesInTermsJoined)
+        {
+            <tr title="Information about event" onclick="location.href = '@Url.Action("Details", "GamesInTerms", new { id = gameInTerm.GameInTermId })'">
+                <td>@gameInTerm.GameInTerm.Game.Name</td>
+                <td>@gameInTerm.GameInTerm.Term.StartTime.ToString("dd MMM yyyy HH:mm")</td>
+                <td>@gameInTerm.GameInTerm.Term.EndTime.ToString("dd MMM yyyy HH:mm")</td>
+                <td>@gameInTerm.GameInTerm.Term.Deadline.ToString("dd MMM yyyy HH:mm")</td>
+                @if (gameInTerm.GameInTerm.Term.Taken == false)
+                {
+                    <td><input type="checkbox" class="check-box" disabled="disabled"></td>
+                }
+                else
+                {
+                    <td><input type="checkbox" class="check-box" disabled="disabled" checked></td>
+                }
+                <td>@(gameInTerm.GameInTerm.Term.MaxPeople - Model.players.Where(c => c.GameInTermId == gameInTerm.GameInTermId).Count())</td>
+                <td>@Html.ActionLink("Current Players", "ShowPlayers", "GamesInTerms", new { id = gameInTerm.GameInTermId }, null)</td>
+                @if (Model.players.Any(k => k.GameInTermId == gameInTerm.GameInTermId && k.UserId == Model.CurrentUser))
+                {
+                    <td>@Html.ActionLink("Leave", "JoinLeave", "GamesInTerms", new { id = gameInTerm.GameInTermId }, null)</td>
+
+                }
+                else
+                {
+                    if (gameInTerm.GameInTerm.Term.Taken == false)
+                    {
+                        <td>@Html.ActionLink("Join", "JoinLeave", "GamesInTerms", new { id = gameInTerm.GameInTermId }, null)</td>
+                    }
+                    else
+                    {
+                        <td>Taken</td>
+                    }
+
+                }
+                @if (gameInTerm.GameInTerm.Term.Taken == false)
+                {
+                    <td>@Html.ActionLink("Invite", "Invite", "GamesInTerms", new { id = gameInTerm.GameInTermId }, null)</td>
+                }
+                else
+                {
+                    <td>Taken</td>
+                }
+                @if (gameInTerm.GameInTerm.Canceled == true)
+                {
+                <td>Canceled</td>}
+                else if (gameInTerm.GameInTerm.Confirmed == true)
+                {
+                <td> Confirmed </td>}
+                else
+                {
+                <td>Pending</td>}
+            </tr>
+        }
+</tbody>
+</table>
+
+
+
+
+

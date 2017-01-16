@@ -1,0 +1,70 @@
+﻿@model GameON.ViewModels.GameInTermDetailsViewModel
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Event Details</h2>
+<hr />
+<div id="details">
+    <ul>
+        <li style="font-size:20px" ;>Owner: @Model.GameInTerm.Term.Owner.UserName</li>
+
+        <li style="font-size:20px" ;>Game: @Model.GameInTerm.Game.Name</li>
+        <li style="font-size:20px" ;>Game Type: @Model.GameInTerm.Game.GameType.Name</li>
+
+        <li style="font-size:20px" ;>Start Time: @Model.GameInTerm.Term.StartTime.ToString("dd MMM yyyy HH:mm")</li>
+        <li style="font-size:20px" ;>End Time: @Model.GameInTerm.Term.EndTime.ToString("dd MMM yyyy HH:mm")</li>
+        <li style="font-size:20px" ;>Deadline: @Model.GameInTerm.Term.Deadline.ToString("dd MMM yyyy HH:mm")</li>
+        <li style="font-size:20px" ;>Min People: @Model.GameInTerm.Term.MinPeople</li>
+        <li style="font-size:20px" ;>Max People: @Model.GameInTerm.Term.MaxPeople</li>
+        @if (Model.GameInTerm.Term.Price == 0)
+        {
+            <li style="font-size:20px" ;>Price: Free</li>
+        }
+        else
+        {
+            <li style="font-size:20px" ;>Price: @Model.GameInTerm.Term.Price kn</li>
+        }
+        <li style="font-size:20px" ;>City: @Model.GameInTerm.Term.City</li>
+        <li style="font-size:20px" ;>Place: @Model.GameInTerm.Term.Place</li>
+        <li style="font-size:20px" ;>Address: @Model.GameInTerm.Term.Address</li>
+        <li style="font-size:20px" ;>ZIP Code: @Model.GameInTerm.Term.ZIPCode</li>
+
+    </ul>
+</div>
+@*if (Model.GameInTerm.Term.Deadline < DateTime.Now && Model.Players.Count() >= Model.GameInTerm.Term.MinPeople && Model.Players.Any(k => k.GameInTermId == Model.GameInTerm.Id && k.UserId == Model.CurrentUser))*@
+@if (Model.GameInTerm.Confirmed)
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var player in Model.Players)
+                {
+                    <tr>
+                        <td>@player.User.UserName</td>
+                        <td>@player.User.Name</td>
+                        <td>@player.User.Email</td>
+                        <td>@player.User.PhoneNumber</td>
+                    </tr>
+                }
+
+        </tbody>
+    </table>
+
+}
+
+@section Scripts
+{
+
+}
+
+

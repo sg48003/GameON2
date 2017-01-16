@@ -1,0 +1,18 @@
+﻿@model GameON.ViewModels.GameInTermFormViewModel
+@{
+    ViewBag.Title = "GameInTermForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New Event</h2>
+
+@using (Html.BeginForm("Save", "GamesInTerms"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.GameInTerm.Game.Name)
+        @Html.DropDownListFor(m => m.GameInTerm.GameId, new SelectList(Model.Games,"Id", "Name"), "Select Game", new { @class = "form-control" })
+    </div>
+    @Html.HiddenFor(m => m.GameInTerm.TermId, new { Value = Model.Term.Id.ToString() });
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-primary">Save</button>
+}

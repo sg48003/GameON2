@@ -1,0 +1,486 @@
+E:\GameON\GameON\bin\roslyn\csc.exe
+E:\GameON\GameON\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\GameON\GameON\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\GameON\GameON\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\GameON\GameON\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\GameON\GameON\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\GameON\GameON\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\GameON\GameON\bin\roslyn\System.Collections.Immutable.dll
+E:\GameON\GameON\bin\roslyn\System.Reflection.Metadata.dll
+E:\GameON\GameON\bin\roslyn\vbc.exe
+E:\GameON\GameON\bin\roslyn\VBCSCompiler.exe
+E:\GameON\GameON\bin\roslyn\VBCSCompiler.exe.config
+E:\GameON\GameON\bin\GameON.dll.config
+E:\GameON\GameON\bin\GameON.dll
+E:\GameON\GameON\bin\GameON.pdb
+E:\GameON\GameON\bin\Antlr3.Runtime.dll
+E:\GameON\GameON\bin\EntityFramework.dll
+E:\GameON\GameON\bin\EntityFramework.SqlServer.dll
+E:\GameON\GameON\bin\Microsoft.AspNet.Identity.Core.dll
+E:\GameON\GameON\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\GameON\GameON\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\GameON\GameON\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\GameON\GameON\bin\Microsoft.Owin.dll
+E:\GameON\GameON\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\GameON\GameON\bin\Microsoft.Owin.Security.Cookies.dll
+E:\GameON\GameON\bin\Microsoft.Owin.Security.dll
+E:\GameON\GameON\bin\Microsoft.Owin.Security.Facebook.dll
+E:\GameON\GameON\bin\Microsoft.Owin.Security.Google.dll
+E:\GameON\GameON\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\GameON\GameON\bin\Microsoft.Owin.Security.OAuth.dll
+E:\GameON\GameON\bin\Microsoft.Owin.Security.Twitter.dll
+E:\GameON\GameON\bin\Microsoft.Web.Infrastructure.dll
+E:\GameON\GameON\bin\Newtonsoft.Json.dll
+E:\GameON\GameON\bin\Owin.dll
+E:\GameON\GameON\bin\System.Web.Helpers.dll
+E:\GameON\GameON\bin\System.Web.Mvc.dll
+E:\GameON\GameON\bin\System.Web.Optimization.dll
+E:\GameON\GameON\bin\System.Web.Razor.dll
+E:\GameON\GameON\bin\System.Web.WebPages.Deployment.dll
+E:\GameON\GameON\bin\System.Web.WebPages.dll
+E:\GameON\GameON\bin\System.Web.WebPages.Razor.dll
+E:\GameON\GameON\bin\WebGrease.dll
+E:\GameON\GameON\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\GameON\GameON\bin\System.Web.Helpers.xml
+E:\GameON\GameON\bin\System.Web.Mvc.xml
+E:\GameON\GameON\bin\System.Web.Optimization.xml
+E:\GameON\GameON\bin\System.Web.Razor.xml
+E:\GameON\GameON\bin\System.Web.WebPages.xml
+E:\GameON\GameON\bin\System.Web.WebPages.Deployment.xml
+E:\GameON\GameON\bin\System.Web.WebPages.Razor.xml
+E:\GameON\GameON\bin\Antlr3.Runtime.pdb
+E:\GameON\GameON\bin\Newtonsoft.Json.xml
+E:\GameON\GameON\bin\EntityFramework.xml
+E:\GameON\GameON\bin\EntityFramework.SqlServer.xml
+E:\GameON\GameON\bin\Microsoft.AspNet.Identity.Core.xml
+E:\GameON\GameON\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\GameON\GameON\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\GameON\GameON\bin\Microsoft.Owin.xml
+E:\GameON\GameON\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\GameON\GameON\bin\Microsoft.Owin.Security.xml
+E:\GameON\GameON\bin\Microsoft.Owin.Security.Facebook.xml
+E:\GameON\GameON\bin\Microsoft.Owin.Security.Cookies.xml
+E:\GameON\GameON\bin\Microsoft.Owin.Security.OAuth.xml
+E:\GameON\GameON\bin\Microsoft.Owin.Security.Google.xml
+E:\GameON\GameON\bin\Microsoft.Owin.Security.Twitter.xml
+E:\GameON\GameON\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\GameON\GameON\obj\Debug\GameON.csprojResolveAssemblyReference.cache
+E:\GameON\GameON\obj\Debug\GameON.dll
+E:\GameON\GameON\obj\Debug\GameON.pdb
+E:\GameON\GameON\obj\Debug\GameON.Migrations.InitialModel.resources
+E:\GameON\GameON\obj\Debug\GameON.csproj.GenerateResource.Cache
+E:\GameON\GameON\obj\Debug\GameON.Migrations.BirthDate_Name.resources
+E:\GameON\GameON\bin\roslyn\csc.exe.config
+E:\GameON\GameON\bin\roslyn\csc.rsp
+E:\GameON\GameON\bin\roslyn\csi.exe
+E:\GameON\GameON\bin\roslyn\csi.rsp
+E:\GameON\GameON\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\GameON\GameON\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\GameON\GameON\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\GameON\GameON\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\GameON\GameON\bin\roslyn\System.AppContext.dll
+E:\GameON\GameON\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\GameON\GameON\bin\roslyn\System.IO.FileSystem.dll
+E:\GameON\GameON\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\GameON\GameON\bin\roslyn\vbc.exe.config
+E:\GameON\GameON\bin\roslyn\vbc.rsp
+E:\GameON\GameON\bin\RestSharp.dll
+E:\GameON\GameON\bin\Twilio.Api.dll
+E:\GameON\GameON\bin\RestSharp.xml
+E:\GameON\GameON\bin\Twilio.Api.pdb
+E:\GameON\GameON\bin\Twilio.Api.xml
+E:\GameON\GameON\obj\Debug\GameON.Migrations.GameType.resources
+E:\GameON\GameON\obj\Debug\GameON.Migrations.Game.resources
+E:\GameON\GameON\obj\Debug\GameON.Migrations.Term.resources
+E:\GameON\GameON\obj\Debug\GameON.Migrations.GameInTerm.resources
+E:\GameON\GameON\obj\Debug\GameON.Migrations.Player.resources
+E:\GameON\GameON\obj\Debug\GameON.Migrations.DoubleForeignKeysSolved.resources
+E:\GameON\GameON\obj\Debug\GameON.Migrations.Game2.resources
+E:\GameON\GameON\obj\Debug\GameON.Migrations.DeleteExtraForeignKey.resources
+E:\GameON\GameON\bin\AutoMapper.dll
+E:\GameON\GameON\bin\System.Net.Http.Formatting.dll
+E:\GameON\GameON\bin\System.Web.Http.dll
+E:\GameON\GameON\bin\System.Web.Http.WebHost.dll
+E:\GameON\GameON\bin\AutoMapper.xml
+E:\GameON\GameON\bin\System.Net.Http.Formatting.xml
+E:\GameON\GameON\bin\System.Web.Http.xml
+E:\GameON\GameON\bin\System.Web.Http.WebHost.xml
+E:\GameON\GameON\obj\Debug\GameON.Migrations.SeedUsers.resources
+E:\GameON\GameON\obj\Debug\GameON.Migrations.Required.resources
+E:\GameON\GameON\obj\Debug\GameON.Migrations.Null.resources
+E:\GameON\GameON\obj\Debug\GameON.Migrations.Deadline.resources
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Antiforgery.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Authorization.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Cors.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.DataProtection.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Html.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Http.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Http.Extensions.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Http.Features.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.JsonPatch.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Localization.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Core.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Cors.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Localization.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Razor.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Razor.Host.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Razor.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Razor.Runtime.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Routing.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.WebUtilities.dll
+E:\GameON\GameON\bin\Microsoft.CodeAnalysis.CSharp.dll
+E:\GameON\GameON\bin\Microsoft.CodeAnalysis.dll
+E:\GameON\GameON\bin\Microsoft.DotNet.InternalAbstractions.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.Caching.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.Caching.Memory.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.DependencyInjection.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.DependencyModel.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.FileProviders.Composite.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.FileProviders.Physical.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.Globalization.CultureInfoCache.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.Localization.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.Localization.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.Logging.Abstractions.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.ObjectPool.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.Options.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.PlatformAbstractions.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.Primitives.dll
+E:\GameON\GameON\bin\Microsoft.Extensions.WebEncoders.dll
+E:\GameON\GameON\bin\Microsoft.Net.Http.Headers.dll
+E:\GameON\GameON\bin\System.Buffers.dll
+E:\GameON\GameON\bin\System.Collections.Immutable.dll
+E:\GameON\GameON\bin\System.ComponentModel.Primitives.dll
+E:\GameON\GameON\bin\System.ComponentModel.TypeConverter.dll
+E:\GameON\GameON\bin\System.Data.Common.dll
+E:\GameON\GameON\bin\System.Diagnostics.DiagnosticSource.dll
+E:\GameON\GameON\bin\System.Reflection.Metadata.dll
+E:\GameON\GameON\bin\System.Text.Encodings.Web.dll
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Antiforgery.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Authorization.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Cors.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Cryptography.Internal.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.DataProtection.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.DataProtection.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Diagnostics.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Html.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Http.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Http.Extensions.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Http.Features.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.JsonPatch.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Localization.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.ApiExplorer.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Core.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Cors.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Formatters.Xml.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Localization.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Razor.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.Razor.Host.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.TagHelpers.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Razor.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Razor.Runtime.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Routing.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.AspNetCore.WebUtilities.xml
+E:\GameON\GameON\bin\Microsoft.CodeAnalysis.xml
+E:\GameON\GameON\bin\Microsoft.CodeAnalysis.CSharp.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.Caching.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.Caching.Memory.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.DependencyInjection.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.FileProviders.Composite.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.FileProviders.Physical.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.FileSystemGlobbing.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.Globalization.CultureInfoCache.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.Localization.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.Localization.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.Logging.Abstractions.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.ObjectPool.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.Options.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.PlatformAbstractions.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.Primitives.xml
+E:\GameON\GameON\bin\Microsoft.Extensions.WebEncoders.xml
+E:\GameON\GameON\bin\Microsoft.Net.Http.Headers.xml
+E:\GameON\GameON\bin\System.Collections.Immutable.xml
+E:\GameON\GameON\bin\System.Diagnostics.DiagnosticSource.xml
+E:\GameON\GameON\bin\System.Reflection.Metadata.xml
+E:\GameON\GameON\bin\System.Text.Encodings.Web.xml
+E:\GameON\GameON\bin\Glimpse.AspNet.dll
+E:\GameON\GameON\bin\Glimpse.Core.dll
+E:\GameON\GameON\bin\Glimpse.Mvc5.dll
+E:\GameON\GameON\obj\Debug\GameON.Migrations.Invite.resources
+E:\GameON\GameON\obj\Debug\GameON.Migrations.GameInTermIntoInvite.resources
+E:\GameON\GameON\obj\Debug\GameON.Migrations.Flags.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\csc.exe
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\csc.exe.config
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\csc.rsp
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\csi.exe
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\csi.rsp
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\System.AppContext.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\System.Collections.Immutable.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\System.IO.FileSystem.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\System.Reflection.Metadata.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\vbc.exe
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\vbc.exe.config
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\vbc.rsp
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\VBCSCompiler.exe
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\roslyn\VBCSCompiler.exe.config
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\GameON.dll.config
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\GameON.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\GameON.pdb
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Antlr3.Runtime.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\AutoMapper.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\EntityFramework.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\EntityFramework.SqlServer.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Glimpse.AspNet.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Glimpse.Core.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Glimpse.Mvc5.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNet.Identity.Core.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Antiforgery.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Authorization.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Cors.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.DataProtection.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Html.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Http.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Http.Extensions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Http.Features.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.JsonPatch.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Localization.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Core.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Cors.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Localization.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Razor.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Razor.Host.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Razor.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Razor.Runtime.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Routing.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.WebUtilities.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.CodeAnalysis.CSharp.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.CodeAnalysis.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.DotNet.InternalAbstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Caching.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Caching.Memory.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.DependencyInjection.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.DependencyModel.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.FileProviders.Composite.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.FileProviders.Physical.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Globalization.CultureInfoCache.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Localization.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Localization.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Logging.Abstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.ObjectPool.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Options.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.PlatformAbstractions.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Primitives.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.WebEncoders.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Net.Http.Headers.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.Cookies.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.Facebook.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.Google.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.OAuth.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.Twitter.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Web.Infrastructure.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Newtonsoft.Json.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Owin.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\RestSharp.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Buffers.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Collections.Immutable.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.ComponentModel.Primitives.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.ComponentModel.TypeConverter.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Data.Common.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Diagnostics.DiagnosticSource.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Net.Http.Formatting.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Reflection.Metadata.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Text.Encodings.Web.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.Helpers.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.Http.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.Http.WebHost.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.Mvc.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.Optimization.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.Razor.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.WebPages.Deployment.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.WebPages.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.WebPages.Razor.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Twilio.Api.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\WebGrease.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Antlr3.Runtime.pdb
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\AutoMapper.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Antiforgery.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Authorization.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Cors.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Cryptography.Internal.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.DataProtection.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.DataProtection.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Diagnostics.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Html.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Http.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Http.Extensions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Http.Features.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.JsonPatch.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Localization.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.ApiExplorer.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Core.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Cors.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Formatters.Xml.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Localization.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Razor.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.Razor.Host.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.TagHelpers.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Razor.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Razor.Runtime.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Routing.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNetCore.WebUtilities.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.CodeAnalysis.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.CodeAnalysis.CSharp.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Caching.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Caching.Memory.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.DependencyInjection.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.FileProviders.Composite.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.FileProviders.Physical.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.FileSystemGlobbing.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Globalization.CultureInfoCache.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Localization.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Localization.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Logging.Abstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.ObjectPool.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Options.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.PlatformAbstractions.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.Primitives.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Extensions.WebEncoders.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Net.Http.Headers.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Newtonsoft.Json.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\RestSharp.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Collections.Immutable.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Diagnostics.DiagnosticSource.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Net.Http.Formatting.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Reflection.Metadata.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Text.Encodings.Web.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.Http.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.Http.WebHost.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.Helpers.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.Mvc.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.Optimization.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.Razor.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.WebPages.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.WebPages.Deployment.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\System.Web.WebPages.Razor.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Twilio.Api.pdb
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Twilio.Api.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\EntityFramework.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\EntityFramework.SqlServer.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNet.Identity.Core.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.Facebook.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.Cookies.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.OAuth.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.Google.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.Twitter.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.csprojResolveAssemblyReference.cache
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.InitialModel.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.BirthDate_Name.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.GameType.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.Game.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.Term.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.GameInTerm.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.Player.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.DoubleForeignKeysSolved.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.Game2.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.DeleteExtraForeignKey.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.SeedUsers.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.Required.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.Null.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.Deadline.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.Invite.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.GameInTermIntoInvite.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.Migrations.Flags.resources
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.csproj.GenerateResource.Cache
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\obj\Debug\GameON.pdb
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\SendGrid.CSharp.HTTP.Client.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\SendGrid.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\SendGrid.SmtpApi.dll
+E:\GameON - 7.1.2017\GameON-master\GameON\bin\SendGridMail.dll

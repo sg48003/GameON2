@@ -1,0 +1,20 @@
+﻿@model GameON.ViewModels.GameInTermInviteViewModel
+@{
+    ViewBag.Title = "Invite";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Invite</h2>
+@using (Html.BeginForm("CreateInvite", "GamesInTerms", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Invite.UserReceiveId)
+        @Html.DropDownListFor(m => m.Invite.UserReceiveId, new SelectList(Model.Users, "Id", "UserName"), "Select Member", new { @class = "form-control" })
+    </div>
+    @Html.HiddenFor(m => m.Invite.GameInTermId, new { Value = Model.gameInTerm.Id })
+
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-primary">Send Invite</button>
+}
+

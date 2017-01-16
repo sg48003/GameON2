@@ -1,0 +1,55 @@
+﻿@model IEnumerable<GameON.Models.Game>
+
+@{
+    ViewBag.Title = "Games";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Games</h2>
+<table id="games" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Game Type</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+
+@section Scripts
+{
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.intellisense.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/DataTables/dataTables.bootstrap.js"></script>
+    <script src="~/Scripts/DataTables/jquery.dataTables.js"></script>
+    <script src="~/Scripts/DataTables/buttons.bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            var table = $("#games").DataTable({
+                "pagingType": "simple",
+                "lengthMenu": [5, 10, 25, 50, 75, 100],
+                ajax: {
+                    url: "/api/games",
+                    dataSrc: ""
+                },
+                columns:[
+                    {
+                        data: "name",
+                        render: function (data, type, game) {
+                            return "<a href='/games/events/" + game.id + "'>" + game.name + "</a>";
+                                                             }
+                    },
+                    {
+                        data: "gameType.name"
+                    }
+                        ]
+            });
+
+
+                                    });
+    </script>
+}

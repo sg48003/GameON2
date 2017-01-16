@@ -1,0 +1,311 @@
+﻿@model GameON.ViewModels.GameInTermIndexViewModel
+@{
+    ViewBag.Title = "Events";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Styles.Render("~/Content/css")
+
+<h2>Events</h2>
+<p>
+    @if (Request.IsAuthenticated)
+    {
+        @Html.ActionLink("New Event", "NewTerm", "GamesInTerms", null, new { @class = "btn btn-primary" })
+
+    }
+</p>
+<hr />
+<div id='container'>
+
+    <div id='calendar'></div>
+
+</div>
+<hr />
+@Html.ActionLink("Show All Events", "Index", "GamesInTerms", null, new { @class = "btn btn-primary" })
+<hr />
+<table id="events" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Game</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Deadline</th>
+            <th>City</th>
+            <th>Taken</th>
+            <th>Available Spots</th>
+            <th>Show Players</th>
+            <th>Join/Leave</th>
+            <th>Invite</th>
+            <th>Delete</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @{ var rowColor = "D9E6C4"; }
+        @foreach (var gameInTerm in Model.GameInTerm)
+        {
+            if (gameInTerm.Term.OwnerId == Model.CurrentUser)
+            {
+                if (Model.Players.Any(k => k.GameInTermId == gameInTerm.Id && k.UserId == Model.CurrentUser))
+                {
+                    rowColor = "D9E6C4";
+                }
+                else
+                {
+                    if (gameInTerm.Term.Taken == false)
+                    {
+                        rowColor = "#ADFF2F";
+                    }
+                    else
+                    {
+                        rowColor = "#FA8072";
+                    }
+                }
+                <tr style="background-color:@rowColor;" title="Click for editing" onclick="location.href = '@Url.Action("Edit", "GamesInTerms", new { id = gameInTerm.Id })'">
+                    <td>@gameInTerm.Game.Name</td>
+                    <td>@gameInTerm.Term.StartTime.ToString("dd MMM yyyy HH:mm")</td>
+                    <td>@gameInTerm.Term.EndTime.ToString("dd MMM yyyy HH:mm")</td>
+                    <td>@gameInTerm.Term.Deadline.ToString("dd MMM yyyy HH:mm")</td>
+                    <td>@gameInTerm.Term.City</td>
+                    @if (gameInTerm.Term.Taken == false)
+                    {
+                        <td><input type="checkbox" class="check-box" disabled="disabled"></td>
+                    }
+                    else
+                    {
+                        <td><input type="checkbox" class="check-box" disabled="disabled" checked></td>
+
+                    }
+                    <td>@(gameInTerm.Term.MaxPeople - Model.Players.Where(c => c.GameInTermId == gameInTerm.Id).Count())</td>
+                    <td>@Html.ActionLink("Current Players", "ShowPlayers", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+                    @if (Request.IsAuthenticated)
+                    {
+                        if (Model.Players.Any(k => k.GameInTermId == gameInTerm.Id && k.UserId == Model.CurrentUser))
+                        {
+                            <td>@Html.ActionLink("Leave", "JoinLeave", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+
+
+                        }
+                        else
+                        {
+                            if (gameInTerm.Term.Taken == false)
+                            {
+                                <td>@Html.ActionLink("Join", "JoinLeave", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+
+                            }
+                            else
+                            {
+                                <td>Taken</td>
+
+                            }
+
+                        }
+
+                    }
+                    else
+                    {
+
+                        if (gameInTerm.Term.Taken == false)
+                        {
+                            <td>You must be logged in to join!</td>
+                        }
+                        else
+                        {
+                            <td>Taken</td>
+                        }
+                    }
+                    @if (Request.IsAuthenticated)
+                    {
+                        if (gameInTerm.Term.Taken == false)
+                        {
+                            <td>@Html.ActionLink("Invite", "Invite", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+                        }
+                        else
+                        {
+                            <td>Taken</td>
+                        }
+
+                    }
+                    else
+                    {
+                        <td>You must be logged in to invite!</td>
+                    }
+
+                    @if (gameInTerm.Term.OwnerId == Model.CurrentUser)
+                    {
+                        <td>@Html.ActionLink("Delete", "Delete", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+                    }
+                    else
+                    {
+                        <td>Delete</td>
+                    }
+
+                </tr>
+            }
+            else
+            {
+                if (Model.Players.Any(k => k.GameInTermId == gameInTerm.Id && k.UserId == Model.CurrentUser))
+                {
+                    rowColor = "D9E6C4";
+                }
+                else
+                {
+                    if (gameInTerm.Term.Taken == false)
+                    {
+                        rowColor = "#ADFF2F";
+                    }
+                    else
+                    {
+                        rowColor = "#FA8072";
+                    }
+                }
+                <tr style="background-color:@rowColor;" title="Click for details" onclick="location.href = '@Url.Action("Details", "GamesInTerms", new { id = gameInTerm.Id })'">
+                    <td>@gameInTerm.Game.Name</td>
+                    <td>@gameInTerm.Term.StartTime.ToString("dd MMM yyyy HH:mm")</td>
+                    <td>@gameInTerm.Term.EndTime.ToString("dd MMM yyyy HH:mm")</td>
+                    <td>@gameInTerm.Term.Deadline.ToString("dd MMM yyyy HH:mm")</td>
+                    <td>@gameInTerm.Term.City</td>
+                    @if (gameInTerm.Term.Taken == false)
+                    {
+                        <td><input type="checkbox" class="check-box" disabled="disabled"></td>
+
+
+                    }
+                    else
+                    {
+                        <td><input type="checkbox" class="check-box" disabled="disabled" checked></td>
+
+
+                    }
+                    <td>@(gameInTerm.Term.MaxPeople - Model.Players.Where(c => c.GameInTermId == gameInTerm.Id).Count())</td>
+                    <td>@Html.ActionLink("Current Players", "ShowPlayers", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+                    @if (Request.IsAuthenticated)
+                    {
+                        if (Model.Players.Any(k => k.GameInTermId == gameInTerm.Id && k.UserId == Model.CurrentUser))
+                        {
+                            <td>@Html.ActionLink("Leave", "JoinLeave", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+
+                        }
+                        else
+                        {
+                            if (gameInTerm.Term.Taken == false)
+                            {
+                                <td>@Html.ActionLink("Join", "JoinLeave", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+
+                            }
+                            else
+                            {
+
+                                <td>Taken</td>
+
+                            }
+
+                        }
+
+                    }
+                    else
+                    {
+                        if (gameInTerm.Term.Taken == false)
+                        {
+                            <td>You must be logged in to join!</td>
+                        }
+                        else
+                        {
+                            <td>Taken</td>
+                        }
+                    }
+                    @if (Request.IsAuthenticated)
+                    {
+                        if (gameInTerm.Term.Taken == false)
+                        {
+                            <td>@Html.ActionLink("Invite", "Invite", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+                        }
+                        else
+                        {
+                            <td>Taken</td>
+                        }
+
+                    }
+                    else
+                    {
+                        <td>You must be logged in to invite!</td>
+                    }
+
+                    @if (gameInTerm.Term.OwnerId == Model.CurrentUser)
+                    {
+                        <td>@Html.ActionLink("Delete", "Delete", "GamesInTerms", new { id = gameInTerm.Id }, null)</td>
+                    }
+                    else
+                    {
+                        <td>Delete</td>
+                    }
+
+                </tr>
+            }
+
+        }
+    </tbody>
+
+</table>
+@*
+    // timer samo treba otkriti kako predati podatke iz view prema skripti
+    <div class="getting-started"></div>
+*@
+
+@Scripts.Render("~/bundles/moment")
+@Scripts.Render("~/bundles/lib")
+@Scripts.Render("~/bundles/jqueryval")
+@section Scripts
+{
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.intellisense.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/DataTables/dataTables.bootstrap.js"></script>
+    <script src="~/Scripts/DataTables/jquery.dataTables.js"></script>
+    <script src="~/Scripts/DataTables/buttons.bootstrap.js"></script>
+    <link href="~/Content/flipclock.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.countdown.min.js"></script>
+    <script src="~/Scripts/flipclock.js"></script>
+    <script src="~/Scripts/DayPilot/daypilot-all.min.js"></script>
+    <link rel='stylesheet' href='~/Content/fullcalendar.css' />
+    <script src='lib/jquery.min.js'></script>
+    <script src='lib/moment.min.js'></script>
+    <script src='~/Scripts/fullcalendar.js'></script>
+    <script>
+        $(document).ready(function () {
+            var table = $("#events").DataTable({
+                "pagingType": "simple",
+                "lengthMenu": [5, 10, 25, 50, 75, 100],
+
+            });
+            var d = new Date();
+            d.setTime(1481037780 * 1000);
+            $('.getting-started').countdown(d, function(event) {
+                $(this).text(event.strftime('%D days %H:%M:%S'))
+            });
+
+            $('#calendar').fullCalendar({
+                // put your options and callbacks here
+                events: "/api/events/",
+                header: {
+                    left: "prev",
+                    center: "title",
+                    right:"today month,basicWeek,basicDay next"
+                },
+
+                height: 500,
+                eventClick: function(calEvent, jsEvent, view) {
+
+                    
+                    window.location = "https://localhost:44337/GamesInTerms/Details/" + calEvent.id;
+
+                }
+
+
+            })
+
+
+
+                                    });
+    </script>
+}
+

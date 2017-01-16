@@ -1,0 +1,22 @@
+﻿@model GameON.ViewModels.GameFormViewModel
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New Game</h2>
+@using (Html.BeginForm("Create", "Games"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Game.Name)
+        @Html.TextBoxFor(m => m.Game.Name, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Game.GameTypeId)
+        @Html.DropDownListFor(m => m.Game.GameTypeId, new SelectList(Model.GameTypes, "Id", "Name"), "Select Game Type" , new { @class = "form-control" })
+    </div>
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-primary">Save</button>
+}
+

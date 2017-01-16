@@ -1,0 +1,107 @@
+﻿@model GameON.Models.Term
+@{
+    ViewBag.Title = "TermForm";
+    @*Layout = "~/Views/Shared/_Layout.cshtml";*@
+}
+
+
+<h2>New Term</h2>
+@Styles.Render("~/Content/css")
+
+@using (Html.BeginForm("CreateTerm", "GamesInTerms", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <hr />
+    <div class="form-group">
+        @Html.LabelFor(m => m.StartTime, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.StartTime, new { @class = "form-control datetimepicker1" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.EndTime, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.EndTime, new { @class = "form-control datetimepicker2" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Deadline, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Deadline, new { @class = "form-control datetimepicker3" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.MinPeople, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.MinPeople, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.MaxPeople, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.MaxPeople, new { @class = "form-control" })
+        </div>       
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Price, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Price, new { @class = "form-control" })
+        </div>       
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.City, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
+        </div>       
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Address, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+        </div>    
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Place, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Place, new { @class = "form-control" })
+        </div>     
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ZIPCode, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.ZIPCode, new { @class = "form-control" })
+        </div>      
+    </div>
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-primary">Save</button>
+
+
+}
+@Scripts.Render("~/bundles/moment")
+@Scripts.Render("~/bundles/lib")
+@Scripts.Render("~/bundles/jqueryval")
+
+@section Scripts 
+{
+    <script>
+            $(document).ready(function () {
+                $('.datetimepicker1').datetimepicker({
+                    format: "DD MMM YYYY HH:mm"
+                });
+                $('.datetimepicker2').datetimepicker({
+                    format: "DD MMM YYYY HH:mm",
+                });
+                $('.datetimepicker3').datetimepicker({
+                    format: "DD MMM YYYY HH:mm",
+                });
+
+                $(".datetimepicker1").on("dp.change", function (e) {
+                    $('.datetimepicker2').data("DateTimePicker").minDate(e.date);
+                    $('.datetimepicker3').data("DateTimePicker").maxDate(e.date);
+                });
+                $(".datetimepicker2").on("dp.change", function (e) {
+                    
+                });
+            });
+    </script>
+}

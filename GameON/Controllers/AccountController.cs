@@ -229,15 +229,7 @@ namespace GameON.Controllers
 
                 using (var smtp = new SmtpClient())
                 {
-                    var credential = new NetworkCredential
-                    {
-                        UserName = "samozapartis32@gmail.com",  // replace with valid value
-                        Password = "lolgamer321"  // replace with valid value
-                    };
-                    smtp.Credentials = credential;
-                    smtp.Host = "smtp.gmail.com";
-                    smtp.Port = 587;
-                    smtp.EnableSsl = true;
+              
                     await smtp.SendMailAsync(message);
                     return RedirectToAction("ForgotPasswordConfirmation");
                 }
